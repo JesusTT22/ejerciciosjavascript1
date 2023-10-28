@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio 19 - Contador de caracteres</title>
+  <style>
+    #contenedor {
+      width: 160px;
+      height: 160px;
+      border:thin solid silver; 
+      position: relative;
+    }
+
+    #zonaClic {
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      text-align: center;
+      font-size: 12px;
+      line-height: 200px;
+    }
+
+    #texto {
+      width: 100%;
+      height: 100%;
+      border: none;
+      padding: 10px;
+      font-size: 12px;
+    }
+  </style>
+  <script type="text/javascript" src="ejercicio20.js">
+  </script>
+</head>
+<body>
+  <div id="contenedor" onmousedown="informarZonaClic(event)">
+    <div id="zonaClic">Haz clic</div>
+    <textarea id="texto" onkeydown="return contarCaracteres()" onkeyup="contarCaracteres()"></textarea>
+  </div>
+</body>
+</html>

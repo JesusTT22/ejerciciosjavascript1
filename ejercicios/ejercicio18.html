@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio 18 - Información sobre eventos</title>
+  <style>
+    .container {
+      display: flex;
+    }
+    .box {
+        width: 48%;
+      position: absolute;
+      background-color: white;
+      padding: 5px;
+      border: 1px solid #000;
+      
+    }
+    .box-raton {
+      left: 5px;
+      background-color: white;
+    }
+    .box-teclado {
+      right: 5px;
+      background-color: white;
+    }
+  </style>
+</head>
+<body onmousemove="muestraInformacion(event)" onkeydown="cambiaMensaje(event)" onmousedown="cambiaFondo('FFFFCC')" onmouseup="cambiaFondo('CCE6FF')">
+  <div class="container">
+    <div class="box box-raton" id="raton">
+      <h2>Ratón</h2>
+      <div id="mensajeRaton">Posición del Puntero: (0, 0)</div>
+    </div>
+
+    <div class="box box-teclado" id="teclado">
+      <h2>Teclado</h2>
+      <div id="mensajeTeclado">Tecla pulsada: N/A</div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="ejercicio18.js">
+  </script>
+</body>
+</html>
